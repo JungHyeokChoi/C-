@@ -1,8 +1,6 @@
 # Command Pattern
 
-### This is an example of a Command Pattern  
-
-<br />
+### This is an example of a Command Pattern 
 
 ## 1. environment
 
