@@ -10,7 +10,7 @@
 
 ## 2. UML, Class Diagram
 
-![Untitled Diagram (1)](https://user-images.githubusercontent.com/65533287/109951306-e0455e00-7d20-11eb-8546-08ed2f059b8d.png)
+![캡처](https://user-images.githubusercontent.com/65533287/109951888-93ae5280-7d21-11eb-8730-940d106bb070.PNG)
 
 ## 3. Get Start
 
