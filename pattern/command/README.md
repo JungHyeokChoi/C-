@@ -2,7 +2,7 @@
 
 ### This is an example of a Command Pattern  
 
-### <br /><br />
+<br />
 
 ## 1. environment
 
