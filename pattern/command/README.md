@@ -8,7 +8,7 @@
 - **g++ (Ubuntu 7.5.0-3ubuntu1~18.04) 7.5.0**
 - **C++**
 
-## 2. UML, Class Diagram
+## 2. Class Diagram
 
 ![캡처](https://user-images.githubusercontent.com/65533287/109951888-93ae5280-7d21-11eb-8730-940d106bb070.PNG)
 
