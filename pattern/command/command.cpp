@@ -1,5 +1,5 @@
 #include "command.h"
-#include "machine.h"
+#include "parts.h"
 
 class RelayOnCommand : public Command {
     public:

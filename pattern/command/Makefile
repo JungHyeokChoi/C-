@@ -1,7 +1,5 @@
-command : command.h command.cpp machine.cpp machine.h
-	g++ command.cpp machine.cpp -o command
-
-all : command
+command : command.h command.cpp parts.cpp parts.h
+	g++ command.cpp parts.cpp -o command
 
 clean : 
 	rm command
