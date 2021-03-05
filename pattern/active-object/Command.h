@@ -4,8 +4,7 @@
 class Command
 {
     public:
-        virtual ~Command() {}
-        virtual void Excute() throw(Exception) = 0;
+        virtual void Execute() throw() {};
 };
 
 #endif

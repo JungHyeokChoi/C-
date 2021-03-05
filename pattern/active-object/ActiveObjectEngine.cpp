@@ -1,15 +1,18 @@
 #include "ActiveObjectEngine.h"
 
-void ActiveObjectEngine :: AddCommand(Command c)
-{
-    itsCommand.add(c)
-} 
+using namespace std;
 
-void ActiveObjectEngine :: Run() throw(Exception)
+void ActiveObjectEngine :: AddCommand(Command *c)
+{
+    itsCommand.push_back(c);
+};
+
+void ActiveObjectEngine :: Run() throw()
 {
     while(!itsCommand.empty()) {
-        Command c = (Command) itsCommand.begin();
+        list<Command*> :: iterator iter = itsCommand.begin();
+        Command* c = *iter;
         itsCommand.pop_front();
-        c.excute();
+        c->Execute();
     }
-}
+};

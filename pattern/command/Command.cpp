@@ -11,7 +11,7 @@ class RelayOnCommand : public Command
             this->relay = relay;
         }
 
-        void Excute()
+        void Execute()
         {
             relay->On();
         }
@@ -28,7 +28,7 @@ class RelayOffCommand : public Command
             this->relay = relay;
         }
 
-        void Excute()
+        void Execute()
         {
             relay->Off();
         }
@@ -44,7 +44,7 @@ class MotorOnCommand : public Command
             this->motor = motor;
         }
 
-        void Excute()
+        void Execute()
         {
             motor->On();
         }
@@ -60,7 +60,7 @@ class MotorOffCommand : public Command
             this->motor = motor;
         }
 
-        void Excute()
+        void Execute()
         {
             motor->Off();
         }
@@ -76,7 +76,7 @@ class ClutchOnCommand : public Command
             this->clutch = clutch;
         }
 
-        void Excute()
+        void Execute()
         {
             clutch->On();
         }
@@ -92,7 +92,7 @@ class ClutchOffCommand : public Command
             this->clutch = clutch;
         }
 
-        void Excute()
+        void Execute()
         {
             clutch->Off();
         }
@@ -113,14 +113,14 @@ int main()
     Command *clutchOn = new ClutchOnCommand(clutch);
     Command *clutchOff = new ClutchOffCommand(clutch);
 
-    relayOn->Excute();
-    relayOff->Excute();
+    relayOn->Execute();
+    relayOff->Execute();
 
-    motorOn->Excute();
-    motorOff->Excute();
+    motorOn->Execute();
+    motorOff->Execute();
 
-    clutchOn->Excute();
-    clutchOff->Excute();
+    clutchOn->Execute();
+    clutchOff->Execute();
 
     delete(relayOn);
     delete(relayOff);
