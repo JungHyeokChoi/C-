@@ -1,6 +1,7 @@
 # Active Object Pattern
 
-### This is an example of a Active Object Pattern<br />
+### This is an example of a Active Object Pattern
+<br />
 
 ## 1. environment
 
