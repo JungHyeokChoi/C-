@@ -1,5 +1,5 @@
-command : command.h command.cpp parts.cpp parts.h
-	g++ command.cpp parts.cpp -o command
+command : Command.h Command.cpp Parts.cpp Parts.h
+	g++ Command.cpp Parts.cpp -o command
 
 clean : 
 	rm command

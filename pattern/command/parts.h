@@ -1,19 +1,22 @@
 #ifndef PARTS_H
 #define PARTS_H
 
-class Relay {
+class Relay 
+{
     public:
         void On();
         void Off();
 };
 
-class Motor {
+class Motor 
+{
     public:
         void On();
         void Off();
 };
 
-class Clutch {
+class Clutch 
+{
     public:
         void On();
         void Off();

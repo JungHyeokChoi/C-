@@ -1,6 +1,6 @@
 #include <iostream>
 
-#include "parts.h"
+#include "Parts.h"
 
 using namespace std;
 

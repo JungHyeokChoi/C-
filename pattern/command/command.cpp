@@ -1,7 +1,8 @@
-#include "command.h"
-#include "parts.h"
+#include "Command.h"
+#include "Parts.h"
 
-class RelayOnCommand : public Command {
+class RelayOnCommand : public Command
+{
     public:
         Relay *relay;
 
@@ -10,14 +11,15 @@ class RelayOnCommand : public Command {
             this->relay = relay;
         }
 
-        void excute()
+        void Excute()
         {
             relay->On();
         }
 
 };
 
-class RelayOffCommand : public Command {
+class RelayOffCommand : public Command
+{
     public:
         Relay *relay;
 
@@ -26,13 +28,14 @@ class RelayOffCommand : public Command {
             this->relay = relay;
         }
 
-        void excute()
+        void Excute()
         {
             relay->Off();
         }
 };
 
-class MotorOnCommand : public Command {
+class MotorOnCommand : public Command 
+{
     public:
         Motor *motor;
 
@@ -41,13 +44,14 @@ class MotorOnCommand : public Command {
             this->motor = motor;
         }
 
-        void excute()
+        void Excute()
         {
             motor->On();
         }
 };
 
-class MotorOffCommand : public Command {
+class MotorOffCommand : public Command
+{
     public:
         Motor *motor;
 
@@ -56,13 +60,14 @@ class MotorOffCommand : public Command {
             this->motor = motor;
         }
 
-        void excute()
+        void Excute()
         {
             motor->Off();
         }
 };
 
-class ClutchOnCommand : public Command {
+class ClutchOnCommand : public Command
+{
     public:
         Clutch *clutch;
 
@@ -71,13 +76,14 @@ class ClutchOnCommand : public Command {
             this->clutch = clutch;
         }
 
-        void excute()
+        void Excute()
         {
             clutch->On();
         }
 };
 
-class ClutchOffCommand : public Command {
+class ClutchOffCommand : public Command
+{
     public:
         Clutch *clutch;
 
@@ -86,13 +92,14 @@ class ClutchOffCommand : public Command {
             this->clutch = clutch;
         }
 
-        void excute()
+        void Excute()
         {
             clutch->Off();
         }
 };
 
-int main() {
+int main()
+{
     Relay *relay = new Relay;
     Motor *motor = new Motor;
     Clutch *clutch = new Clutch;
@@ -106,14 +113,14 @@ int main() {
     Command *clutchOn = new ClutchOnCommand(clutch);
     Command *clutchOff = new ClutchOffCommand(clutch);
 
-    relayOn->excute();
-    relayOff->excute();
+    relayOn->Excute();
+    relayOff->Excute();
 
-    motorOn->excute();
-    motorOff->excute();
+    motorOn->Excute();
+    motorOff->Excute();
 
-    clutchOn->excute();
-    clutchOff->excute();
+    clutchOn->Excute();
+    clutchOff->Excute();
 
     delete(relayOn);
     delete(relayOff);
